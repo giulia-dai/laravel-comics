@@ -10,10 +10,10 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary mb-4">
             <div class="container-fluid justify-content-between d-flex">
                 <div class="navbar-brand wrapper">
-                    <img class="wrapped" src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="">
+                    <img class="wrapped" src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="logo dc-comics">
 
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -24,7 +24,35 @@
                 <div class="ms_list">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="{{ route('home') }}">CHARACTERS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{{ route('comic') }}">COMICS</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{{ route('home') }}">MOVIES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{{ route('home') }}">TV</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{{ route('home') }}">GAMES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{{ route('home') }}">COLLECTIBLES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{{ route('home') }}">VIDEOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{{ route('home') }}">FANS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{{ route('home') }}">NEWS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{{ route('home') }}">SHOP</a>
                         </li>
                 </div>
                 <div id="ms_search">
@@ -35,6 +63,11 @@
                 </div>
             </div>
         </nav>
+        <div class="container-fluid">
+            <div class="jumbo">
+                <img src="{{ Vite::asset('resources/img/jumbotron.jpg') }}" alt="">
+            </div>
+        </div>
 
     </header>
 
