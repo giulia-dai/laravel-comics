@@ -6,9 +6,14 @@
     box-sizing: border-box;
 }
 
+// nav
+.barra {
+    border-bottom: 2px solid #0082F9 !important;
+}
+
 // jumbotron
 .wrap {
-    height: 300px;
+    height: 400px;
     width: 100%;
 }
 
@@ -17,6 +22,28 @@
     width: 100%;
     object-fit: cover;
     object-position: top;
+}
+
+// main
+main {
+    background-color: #1C1C1C;
+
+    .card {
+        background-color: #1C1C1C;
+        border: none;
+
+        .title {
+            color: white;
+        }
+    }
+}
+
+.ms_books {
+    padding-top: 50px;
+}
+
+.cta {
+    background-color: #0082F9;
 }
 
 //footer
@@ -39,14 +66,52 @@
 }
 
 .img-footer {
-    max-width: 400px;
+    max-width: 390px;
     position: absolute;
-    right: 50px;
-    top: 0;
+    right: 70px;
+    top: 20px;
 
     img {
         width: 100%;
         overflow: hidden;
     }
 
+}
+
+.copyright {
+    color: grey;
+    font-size: 12px;
+    margin-left: 60px;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+// footer bottom
+.sign-up {
+    background-color: #303030;
+    position: relative;
+
+    button {
+        color: white;
+    }
+}
+
+.socials {
+    position: absolute;
+    right: 70px;
+    top: 30px;
+
+    h5 {
+        color: #0082F9;
+    }
+}
+
+.icons {
+    margin-left: 10px;
+
+    img {
+        padding-right: 10px;
+    }
 }

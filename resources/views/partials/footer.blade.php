@@ -11,7 +11,9 @@
 <body>
 
     <footer>
-        <div class="container-fluid ms-footer mt-3">
+        {{-- footer top --}}
+
+        <div class="container-fluid ms-footer">
             <div class="ms-footer-list">
                 <ul class="list-unstyled">
                     <li>DC COMICS</li>
@@ -53,10 +55,34 @@
                     <li>DC Power Visa</li>
                 </ul>
             </div>
+            <p class="copyright">All Site Content TM and &copy; 2020 DC Entertainment, unless otherwise <a
+                    href="#">noted
+                    here</a>All rights reserved. <br> <a href="#">Coockies Settings</a></p>
             <div class="img-footer">
                 <img src="{{ Vite::asset('resources/img/dc-logo-bg.png') }}" alt="">
             </div>
         </div>
+        {{-- footer bottom --}}
+
+        <div class="container-fuid p-4 sign-up">
+            <div class="ms-btn ms-5">
+                <button type="button" class="btn btn-outline-primary">SIGN-UP NOW!</button>
+            </div>
+
+            <div class="socials d-flex justify-content-end">
+                <h5>FOLLOW US!</h5>
+                <div class="icons">
+                    <img src="{{ Vite::asset('resources/img/footer-facebook.png') }}" alt="">
+                    <img src="{{ Vite::asset('resources/img/footer-twitter.png') }}" alt="">
+                    <img src="{{ Vite::asset('resources/img/footer-youtube.png') }}" alt="">
+                    <img src="{{ Vite::asset('resources/img/footer-pinterest.png') }}" alt="">
+                    <img src="{{ Vite::asset('resources/img/footer-periscope.png') }}" alt="">
+                </div>
+
+            </div>
+
+        </div>
+
 
     </footer>
 
