@@ -89,6 +89,17 @@ main {
 }
 
 // footer bottom
+.list-unstyled {
+    li {
+        color: grey;
+        cursor: pointer;
+
+        &:hover {
+            color: white;
+        }
+    }
+}
+
 .sign-up {
     background-color: #303030;
     position: relative;
@@ -113,5 +124,14 @@ main {
 
     img {
         padding-right: 10px;
+    }
+}
+
+// comic page
+.comics-wrapper {
+    max-width: calc(100% / 5);
+
+    .comics-img {
+        width: 100%;
     }
 }
